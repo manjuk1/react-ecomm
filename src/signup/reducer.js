@@ -28,7 +28,7 @@ const reducer = function signupReducer (state = initialState, action) {
       return {
         errors: [],
         messages: [{
-          body: `Successfully created account for ${action.response.email}`,
+          body: `Successfully created account for ${action.email}`,
           time: new Date(),
         }],
         requesting: false,
@@ -42,7 +42,7 @@ const reducer = function signupReducer (state = initialState, action) {
     case SIGNUP_ERROR:
       return {
         errors: state.errors.concat([{
-          body: action.error.toString(),
+          body: action.message,
           time: new Date(),
         }]),
         messages: [],

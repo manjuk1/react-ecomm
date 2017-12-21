@@ -40,11 +40,11 @@ function* signupFlow (action) {
     // when the above api call has completed it will "put",
     // or dispatch, an action of type SIGNUP_SUCCESS with
     // the successful response.
-    yield put({ type: SIGNUP_SUCCESS, response })
+    yield put({ type: SIGNUP_SUCCESS, email: response.email })
   } catch (error) {
     // if the api call fails, it will "put" the SIGNUP_ERROR
     // into the dispatch along with the error.
-    yield put({ type: SIGNUP_ERROR, error })
+    yield put({ type: SIGNUP_ERROR, message: error.toString() })
   }
 }
 

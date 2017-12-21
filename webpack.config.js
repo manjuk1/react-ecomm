@@ -28,5 +28,6 @@ module.exports = {
     historyApiFallback: true,
     // add this line
   },
+  devtool: 'eval-source-map',
   plugins: [HtmlWebpackPluginConfig]
 }
