@@ -1,24 +1,28 @@
-# react-ecomm
+## react-ecomm : A sample react app 
 
-A Sample ecommerce app in react + redux !
-This app as of now needs
-Webpack
-Babel
+###Tech Stack
+A Sample react app built using the following stack 
 
-PS: This project structure was built ground up, create-react-app could be used to get the basic react app up and running in seconds...
+> react + redux + Webpack + babel
 
-Unit Testing framework integration
+*PS: This project structure was built ground up, create-react-app could be used to get the basic react app up and running in seconds...*
 
-npm install karma --save-dev
-npm install karma-jasmine karma-chrome-launcher jasmine-core --save-dev
-npm install phantomjs --save-dev
-npm install karma-phantomjs-launcher --save-dev
-npm install --save-dev karma-webpack
-npm install --save-dev karma-sourcemap-loader
-npm install --save redux-mock-store
-npm install --save expect
-npm install --save enzyme
-npm install --save enzyme-adapter-react-16
-npm install --save-dev sinon
-npm install --save-dev redux-mock-store
-npm install --save-dev redux-test-utils -> Unused
+###Unit Testing framework
+
+Following tools integrated for unit testing of redux container components, action creators and reducers.
+
+> Karma + Jasmine + enzyme
+
+*PS: Redux saga testing is pending*
+
+### Coverage report using Karma coverage
+
+> karma-coverage
+
+`Command to get the coverage report`
+
+>./node_modules/karma/bin/karma start karma.conf.js --browsers=Chrome --single-run=false --debug
+
+### Unwated plugins imported
+
+>npm install --save-dev redux-test-utils -> Unused
