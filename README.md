@@ -1,13 +1,14 @@
 ## react-ecomm : A sample react app 
 
-###Tech Stack
+### Tech Stack
+
 A Sample react app built using the following stack 
 
 > react + redux + Webpack + babel
 
 *PS: This project structure was built ground up, create-react-app could be used to get the basic react app up and running in seconds...*
 
-###Unit Testing framework
+### Unit Testing framework
 
 Following tools integrated for unit testing of redux container components, action creators and reducers.
 
@@ -19,7 +20,7 @@ Following tools integrated for unit testing of redux container components, actio
 
 > karma-coverage
 
-`Command to get the coverage report`
+*Command to get the coverage report*
 
 >./node_modules/karma/bin/karma start karma.conf.js --browsers=Chrome --single-run=false --debug
 
